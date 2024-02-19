@@ -25,10 +25,9 @@ public class Main_3 {
                     break;
             
                 default:
-
+                
                     System.out.println("Valor errado");
                     break;
-                    
             }
 
         System.out.println("Para ver novamente digite 0");
