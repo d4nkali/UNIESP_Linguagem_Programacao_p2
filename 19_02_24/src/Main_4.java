@@ -30,8 +30,14 @@ public class Main_4 {
                     break;
             }
 
-        System.out.println("Para ver novamente, digite 's'");
+        System.out.println("Para ver novamente, digite 's'; Se não quiser executar, digite 'n'");
         r = sc.next();
+
+        if (r.equalsIgnoreCase("N")){
+
+            break;
+
+        }
 
         }while (r.equalsIgnoreCase("s"));
 
