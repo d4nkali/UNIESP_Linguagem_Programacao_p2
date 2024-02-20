@@ -33,7 +33,7 @@ public class Main_4 {
         System.out.println("Para ver novamente, digite 's'");
         r = sc.next();
 
-        }while (r.equalsIgnoreCase(r));
+        }while (r.equalsIgnoreCase("s"));
 
     }
 
