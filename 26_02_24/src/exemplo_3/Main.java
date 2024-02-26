@@ -25,6 +25,18 @@ public class Main {
 
     System.out.println("A media de "+a.nome+" foi de: "+a.media);
 
+    if (a.media >= 7){
+
+        System.out.println("Aluno aprovado");
+
+    }
+
+    else{
+
+        System.out.println("Aluno reprovado");
+
+    }
+
     }
 
 }
