@@ -29,3 +29,6 @@ lib/
 
 ### Mac OS ###
 .DS_Store
+
+# Documentos pdf
+*.pdf
