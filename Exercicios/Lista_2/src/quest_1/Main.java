@@ -15,14 +15,12 @@ public class Main {
         
         Scanner sc = new Scanner(System.in); // Cria o Scanner do teclado
 
-        System.out.print("Digite o número de maçãs que serão compradas: ");
-        int quant_maca = sc.nextInt();
+        System.out.print("Digite o número de maçãs que serão compradas: "); // Pergunta a quantidade de maçãs
+        int quant_maca = sc.nextInt(); // Guarda na variavel 'quant_macas'
 
-        // Criando um objeto da classe Compra
-        Compra c = new Compra();
+        Compra c = new Compra(); // Criando o objeto c da classe Compra
 
-        // Chamando o método para calcular o custo total
-        double total = c.calc_maca(quant_maca);
+        double total = c.calc_maca(quant_maca);  // Chamando o método 'calc_maca'
 
         // Exibindo o resultado
         System.out.println("Você comprou "+quant_maca+" Maçãs. O total da compra é de: R$" + total);

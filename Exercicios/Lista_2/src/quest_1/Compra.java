@@ -7,7 +7,7 @@ public class Compra {
     private double preco_normal = 1.30;
     private double preco_desconto = 1.00;
 
-    public double calc_maca(int quant_maca) { // Cria a função 'calc_maca'
+    public double calc_maca(int quant_maca) { // Cria o método 'calc_maca'
 
         double total; // Cria a variavel para o preço final
 
