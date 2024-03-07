@@ -11,6 +11,8 @@ quantidade média = (quantidade máxima + quantidade mínima) / 2
 Se a quantidade em estoque for maior ou igual a quantidade média, escrever a mensagem
 'Não efetuar compra', senão escrever a mensagem 'Efetuar compra' 
 
+Aluno: Danilo Pereira Viana - P2-B
+
 */
 
 import java.util.Scanner; // Importa a biblioteca
