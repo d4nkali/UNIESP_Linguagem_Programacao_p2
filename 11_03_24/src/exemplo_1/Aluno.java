@@ -31,10 +31,10 @@ public class Aluno extends Pessoa{
         }
 
 
-    public void calc_media() {
+    public void calc_media() { // Criando a função 'calc_media'
 
-        media = (nota_1 + nota_2) / 2;
-        System.out.println("A media foi de" + media);
+        media = (nota_1 + nota_2) / 2; // Calcula a media
+        System.out.println("A media foi de" + media); // Imprime os resultados
     
     }
 

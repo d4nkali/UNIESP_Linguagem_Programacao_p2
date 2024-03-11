@@ -30,10 +30,10 @@ public class Professor extends Pessoa {
             this.salario = salario;
         }
     
-    public void calc_salario() {
+    public void calc_salario() { // Cria a função 'calc_salario'
 
-        salario = (qtd_hora * valor_hora);
-        System.out.println("O salario é de: " + salario);
+        salario = (qtd_hora * valor_hora); // Calcula o salario
+        System.out.println("O salario é de: " + salario); // Exibe as informações
 
     }
 }
