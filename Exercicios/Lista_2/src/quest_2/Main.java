@@ -24,19 +24,16 @@ public class Main {
         Scanner sc = new Scanner(System.in); // Cria o Scanner do teclado
         Estoque e = new Estoque(); // Criando o objeto e da classe Estoque
 
-        // Criam as variaveis do tipo inteiro
-        int quant_atual, estoque_min, estoque_max;
-
         System.out.print("Digite a quantidade do estoque atual: "); // Pergunta o estoque atual
-        quant_atual = sc.nextInt(); // Guarda as informações
+        e.setQuant_atual(sc.nextInt()); // Guarda as informações
 
         System.out.print("Digite a quantidade maxima do estoque: "); // Pergunta o estoque maximo
-        estoque_max = sc.nextInt(); // Guarda as informações
+        e.setEstoque_max(sc.nextInt()); // Guarda as informações
 
         System.out.print("Digite a quantidade minima do estoque: "); // Pergunta o estoque minimo
-        estoque_min = sc.nextInt(); // Guarda as informações
+        e.setEstoque_min(sc.nextInt()); // Guarda as informações
 
-        e.calc_media(estoque_max, estoque_min, quant_atual); // Chamando o método 'calc_media'
+        e.calc_media(); // Chamando o método 'calc_media'
 
     }
     
