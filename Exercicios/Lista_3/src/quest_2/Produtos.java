@@ -2,53 +2,60 @@ package quest_2;
 
 public class Produtos {
 
-    String Nome;
-    int Estoque, Quant_venda;
-    double Preço, Preço_final;
+    // Criando as variaveis
 
-    public double getPreço_final() {
-        return this.Preço_final;
-    }
+        String Nome;
+        int Estoque, Quant_venda;
+        double Preço, Preço_final;
 
-    public void setPreço_final(double Preço_final) {
-        this.Preço_final = Preço_final;
-    }
+    // Definido o get e set
 
-    public int getQuant_venda() {
-        return this.Quant_venda;
-    }
+        public double getPreço_final() {
+            return this.Preço_final;
+        }
 
-    public void setQuant_venda(int quant_venda) {
-        this.Quant_venda = quant_venda;
-    }
+        public void setPreço_final(double Preço_final) {
+            this.Preço_final = Preço_final;
+        }
 
-    public String getNome() {
-        return this.Nome;
-    }
+        public int getQuant_venda() {
+            return this.Quant_venda;
+        }
 
-    public void setNome(String Nome) {
-        this.Nome = Nome;
-    }
+        public void setQuant_venda(int quant_venda) {
+            this.Quant_venda = quant_venda;
+        }
 
-    public int getEstoque() {
-        return this.Estoque;
-    }
+        public String getNome() {
+            return this.Nome;
+        }
 
-    public void setEstoque(int Estoque) {
-        this.Estoque = Estoque;
-    }
+        public void setNome(String Nome) {
+            this.Nome = Nome;
+        }
 
-    public double getPreço() {
-        return this.Preço;
-    }
+        public int getEstoque() {
+            return this.Estoque;
+        }
 
-    public void setPreço(double Preço) {
-        this.Preço = Preço;
-    }
+        public void setEstoque(int Estoque) {
+            this.Estoque = Estoque;
+        }
 
-    public void vender_produto() {
+        public double getPreço() {
+            return this.Preço;
+        }
 
-        if (Quant_venda <= Estoque) {
+        public void setPreço(double Preço) {
+            this.Preço = Preço;
+        }
+
+
+    public void venderProduto() { //* Criando a função "venderProduto"
+
+        if (Quant_venda <= Estoque) { //* Se tiver mais item no estoque do que vai ser vendido, então:
+
+            // Imprime as informações e calcula o preço final
 
             System.out.println("Produto: " + getNome());
             System.out.println("Preço Unitario: " + getPreço());
@@ -58,7 +65,7 @@ public class Produtos {
 
         }
 
-        else {
+        else { //* Senão
 
             System.out.println("Não pode concluir a compra. Estoque baixo.");
 

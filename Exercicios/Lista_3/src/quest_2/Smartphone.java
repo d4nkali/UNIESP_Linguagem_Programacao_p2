@@ -1,18 +1,22 @@
 package quest_2;
 
 public class Smartphone extends Produtos {
-    
-    private int numero;
 
-    public int getNumero() {
-        return this.numero;
-    }
+    private int numero; // Cria variavel privada
 
-    public void setNumero(int numero) {
-        this.numero = numero;
-    }
+    // Define o get e set
 
-    public void testeLigacao() {
+        public int getNumero() {
+            return this.numero;
+        }
+
+        public void setNumero(int numero) {
+            this.numero = numero;
+        }
+
+    public void testeLigacao() {  //* Criando a função "testeLigacao"
+
+    // Imprimindo as informações
 
         System.out.println("Ligando para o numero " + getNumero() + " ...");
         System.out.println("O celula esta funcionando.");
