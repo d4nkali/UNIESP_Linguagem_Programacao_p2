@@ -12,9 +12,11 @@ public class Smartphone extends Produtos {
         this.numero = numero;
     }
 
-    public void ligacao() {
+    public void testeLigacao() {
 
-        
+        System.out.println("Ligando para o numero " + getNumero() + " ...");
+        System.out.println("O celula esta funcionando.");
+        System.out.println();
 
     }
 

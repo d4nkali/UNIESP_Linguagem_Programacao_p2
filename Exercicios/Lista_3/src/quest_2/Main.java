@@ -65,9 +65,49 @@ public class Main {
 
             case 2:
 
+                System.out.println("Criando o cadrastro do smartphone...");
+                System.out.println();
 
-            break;
-        
+                System.out.print("Digite o nome/marca da smartphone: ");
+                s.setNome(sc.next());
+                System.out.print("Digite a quantidade do produto no estoque: ");
+                s.setEstoque(sc.nextInt());
+                System.out.print("Digite o preço desse produto: ");
+                s.setPreço(sc.nextDouble());
+
+                System.out.println("Exebindo o cadrastro da smartphone...");
+                System.out.println();
+
+                System.out.println(s.getNome());
+                System.out.println(s.getEstoque());
+                System.out.println(s.getPreço());
+
+                System.out.println();
+                System.out.print("Deseja efetura a compra desse produto? (s/n): ");
+                perg_compra = sc.next();
+                perg_compra.toLowerCase();
+
+                if (perg_compra.equals("s")) {
+
+                    System.out.println("Antes de comprar o smartphone, teste ligando para algum numero");
+                    System.out.print("Digite o numero para testar: ");
+                    s.setNumero(sc.nextInt());
+                    s.testeLigacao();
+
+                    System.out.print("Digite a quantidade de produtos para a venda: ");
+                    s.setQuant_venda(sc.nextInt());
+                    s.vender_produto();
+
+                }
+
+                else {
+
+                    System.out.println("Sem efetuar a venda.");
+
+                }
+
+                break;
+
             default:
 
                 System.out.println("Valor invalido");
