@@ -2,19 +2,21 @@ package quest_2;
 
 public class Televisao extends Produtos{
 
-    private String canal_cadrastrado;
+    private int canal_cadrastrado;
 
-    public String getCanal_cadrastrado() {
+    public int getCanal_cadrastrado() {
         return this.canal_cadrastrado;
     }
 
-    public void setCanal_cadrastrado(String canal_cadrastrado) {
+    public void setCanal_cadrastrado(int canal_cadrastrado) {
         this.canal_cadrastrado = canal_cadrastrado;
     }
 
     public void acessarCanais() {
 
-
+        System.out.println("Testando canal " + getCanal_cadrastrado() + " ...");
+        System.out.println("Canal " + getCanal_cadrastrado() + " esta funcionando.");
+        System.out.println();
 
     }
 
